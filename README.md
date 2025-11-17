@@ -1,4 +1,4 @@
-# Bachelor Thesis - Autonomous robot with probabilistic trajectory and object 
+# Bachelor Thesis - Autonomous robot with probabilistic trajectory and object avoidance
 
 > THE CODE WILL NOT BE SHOWN ONLY AFTER FINISHING THE BACHELOR DEGREE
 
@@ -9,3 +9,12 @@
 </p>    
 
 Reinforcement Learning Algorithm used: <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a>
+
+# Used technologies
+- C#
+- C/C++
+- Python
+- Deep Reinforcement Learning
+- CMSIS-OS (FreeRTOS)
+- Computer Vision
+- Raspbian
