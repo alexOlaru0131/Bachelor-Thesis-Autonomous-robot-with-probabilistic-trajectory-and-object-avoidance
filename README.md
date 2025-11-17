@@ -8,4 +8,4 @@
 <a href=""><strong>Documentation</strong> (under development)</a>
 </p>    
 
-Reinforcement Learning Algorithm used: <p><a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a></p>
+Reinforcement Learning Algorithm used: <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a>
