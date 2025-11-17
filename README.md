@@ -8,4 +8,4 @@
 <a href=""><strong>Documentation</strong> (under development)</a>
 </p>    
 
-`<p><a Reinforcement Learning Algorithm used: Proximal Policy Optimizationhref=""></a></p>`
+<p><a Reinforcement Learning Algorithm used: Proximal Policy Optimizationhref=""></a></p>
