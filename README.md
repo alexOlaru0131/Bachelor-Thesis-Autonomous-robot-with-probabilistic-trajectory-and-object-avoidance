@@ -2,7 +2,7 @@
 
 > THE CODE WILL NOT BE SHOWN ONLY AFTER FINISHING THE BACHELOR DEGREE
 
-<img src="WhatsApp Image 2025-11-17 at 21.57.48_a81f4383.jpg" alt="Photo from the simulator">
+<img src="images/WhatsApp Image 2025-11-17 at 21.57.48_a81f4383.jpg" alt="Photo from the simulator">
 
 <p align="center">
 <a href=""><strong>Documentation</strong> (under development)</a> •
