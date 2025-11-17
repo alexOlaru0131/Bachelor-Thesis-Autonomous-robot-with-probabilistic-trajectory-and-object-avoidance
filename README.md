@@ -1,8 +1,9 @@
-# Bachelor Thesis - Autonomous robot used in special cases
+# Bachelor Thesis - Autonomous robot with probabilistic trajectory and object 
 
-> UNDER DEVELOPMENT!
+> THE CODE WILL NOT BE SHOWN ONLY AFTER FINISHING THE BACHELOR DEGREE
+
+<img src="WhatsApp Image 2025-11-17 at 21.57.48_a81f4383.jpg" alt="Photo from the simulator">
 
 <p align="center">
 <a href=""><strong>Documentation</strong> (under development)</a> •
-<a href=""><strong>Ask a question</strong></a>
 </p>    
