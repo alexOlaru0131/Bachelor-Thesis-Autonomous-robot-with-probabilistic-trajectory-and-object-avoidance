@@ -5,5 +5,7 @@
 <img src="images/WhatsApp Image 2025-11-17 at 21.57.48_a81f4383.jpg" alt="Photo from the simulator">
 
 <p align="center">
-<a href=""><strong>Documentation</strong> (under development)</a> •
+<a href=""><strong>Documentation</strong> (under development)</a>
 </p>    
+
+`<p><a Reinforcement Learning Algorithm used: Proximal Policy Optimizationhref=""></a></p>`
