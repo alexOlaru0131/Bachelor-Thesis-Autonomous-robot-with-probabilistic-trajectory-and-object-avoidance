@@ -21,6 +21,19 @@ For this project I developed a four-wheeled robot equipped with:
 
 Reinforcement Learning Algorithm used: <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a>
 
+# Software Architecture
+
+<img src="images/Untitled diagram-2025-11-27-175523.png">
+
+# Simulation environment
+The simulation environment was developed in Unity Engine trying to mimic realistic constraints of the robot. The Proximal Policy Optimization model is trained here for precise path walking and object avoidance.
+
+# Raspberry Pi 5 8GB development board
+The board runs on Raspbian, processes the input from the Arducam ToF camera and sends the data as input for Proximal Policy Optimization model. All of this is wrapped with Model Predictive Control. The final output is sent to the STM32 board through UART for further interpretation.
+
+# STM32 NUCLEO L452RE-P
+The board uses CMSIS-OS (FreeRTOS-based OS) for task scheduling. It receives through UART a 16 bit message, decodes it and commands the motors with PWM.
+
 # Used technologies
 - C#
 - C/C++
