@@ -22,7 +22,7 @@ For this project I developed a four-wheeled robot equipped with:
 Reinforcement Learning Algorithm used: <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a>
 
 # Vision algorithm
-The ToF camera feedback is filtered with a moving average filter. Breadth-First Search (BFS) is applied to the path from the lowest median point to the maximum-distance point. Selected points along the path are extracted and interpolated for improved approximation.
+The ToF camera feedback is reduced from 240×180 to 48×36 by applying a 5×5 moving average filter, effectively performing noise reduction and spatial downsampling. Breadth-First Search (BFS) is applied to the path from the lowest median point to the maximum-distance point. Selected points along the path are extracted and interpolated for improved approximation.
 
 The 2D feedback is then transformed into a 3D plane and used for further processing.
 
