@@ -12,8 +12,8 @@
 This is my Bachelor's Thesis project, Autonomous robot with probabilistic trajectory and object avoidance.
 
 For this project I developed a four-wheeled robot equipped with:
-- <a href="https://docs.arducam.com/Raspberry-Pi-Camera/Tof-camera/TOF-Camera/#specifications">TOF Camera</a>
-- Raspberry Pi 5 8 GB
+- <a href="https://docs.arducam.com/Raspberry-Pi-Camera/Tof-camera/TOF-Camera/#specifications">ToF camera</a>
+- Raspberry Pi 5
 - STM32 NUCLEO L452RE-P
 - 2x L298N Motor Driver
 - 4x Motor Encoders
@@ -21,18 +21,19 @@ For this project I developed a four-wheeled robot equipped with:
 
 Reinforcement Learning Algorithm used: <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html"> Proximal Policy Optimization</a>
 
-# Software Architecture
+# Vision algorithm
+The ToF camera feedback is filtered with a moving average filter. Breadth-First Search (BFS) is applied to the path from the lowest median point to the maximum-distance point. Selected points along the path are extracted and interpolated for improved approximation.
 
-<img src="images/Untitled diagram-2025-11-27-175523.png">
+The 2D feedback is then transformed into a 3D plane and used for further processing.
 
 # Simulation environment
 The simulation environment was developed in Unity Engine trying to mimic realistic constraints of the robot. The Proximal Policy Optimization model is trained here for precise path walking and object avoidance.
 
-# Raspberry Pi 5 8GB development board
-The board runs on Raspbian, processes the input from the Arducam ToF camera and sends the data as input for Proximal Policy Optimization model. All of this is wrapped with Model Predictive Control. The final output is sent to the STM32 board through UART for further interpretation.
+# Raspberry Pi 5 development board
+The board runs on Raspbian, processes the input from the ToF camera and sends the data as input for Proximal Policy Optimization model. All of this is wrapped with Model Predictive Control. The final output is sent to the STM32 board through UART for further interpretation.
 
-# STM32 NUCLEO L452RE-P
-The board uses CMSIS-OS (FreeRTOS-based OS) for task scheduling. It receives through UART a 16 bit message, decodes it and commands the motors with PWM.
+# STM32 NUCLEO L452RE-P development board
+The board uses CMSIS-OS (a FreeRTOS-based operating system) for task scheduling. It receives a 16-bit message via UART, decodes it, and controls the motors using PWM. For precise and accurate movement, distance values are measured and control algorithms are applied.
 
 # Used technologies
 - C#
@@ -41,4 +42,4 @@ The board uses CMSIS-OS (FreeRTOS-based OS) for task scheduling. It receives thr
 - Deep Reinforcement Learning
 - CMSIS-OS (FreeRTOS)
 - Computer Vision
-- Raspbian
+- Control Theory
